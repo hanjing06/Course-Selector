@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Course-Selector</title>
+            <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <h1 name = "title" id = "title">Course Explorer</h1>
+        <h1>Load Courses (JSON)</h1>
+
+        <input type = "file" id = fileInput accept = ".json">
+    
+        <h1>Sort and Filter</h1>
+            <div id = "filter">
+
+                <label>Department: </label>
+                <select id = "department"></select>
+
+                <label>Level: </label>
+                <select name = "level" id = "level"></select>
+
+                <label>Credits: </label>
+                <select name = "credits" id = "credits"></select>
+
+                <label>Instructor: </label>
+                <select name = "instructor" id = "instructor"></select>
+
+                <label>Sort By: </label>
+                <select name = "sort" id = "sort"></select>
+                
+            </div>
+    
+            <div id = "course-container">
+                <div id = "list"></div>        
+                <div id = "course-info"></div>
+            </div>
+        
+      
+        <script src = "script.js"></script>
+    </body>
+</html>
